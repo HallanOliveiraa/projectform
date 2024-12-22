@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="keyframes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main_text">
+
+        <h1  contenteditable="true">DevForm</h1>
+    
+    </header>
+
+
+  
+    <form action="." method="post" autocomplete="off">
+
+        <fieldset>
+
+            <legend contenteditable="true"><b>Preencha os Dados</b></legend><br>
+
+            <div class="input_box">
+                <input type="text" id="name" name="name" placeholder="" required class="input_box_user">
+                <label for="name" class="input_label"><b>Nome Completo</b></label>
+            </div>
+
+            <br>
+
+            <div class="input_box">
+                <input type="text" id="email" name="email" placeholder="" required class="input_box_user">
+                <label for="email" class="input_label"><b>E-mail</b></label>
+            </div><br>
+
+            <div class="input_box">
+                <input type="text" id="tel" name="tel" placeholder="" required class="input_box_user">
+                <label for="tel" class="input_label"><b>Telefone</b></label>
+            </div><br>
+            
+            <div class="input_box">
+                
+                <p class="text_input_radio"><b>Sexo:</b></p><br>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female"><b>Feminino</b></label><br>
+                
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male"><b>Masculino</b></label><br>
+                
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others"><b>Outros</b></label><br>
+                
+            </div><br>
+            
+            <div  class="birth">
+                <label for="date_birth"><b>Data de Nascimento</b></label>
+                <input  id="date_birth" type="date" name="date_birth">
+            </div><br>
+            
+            <div class="input_box">
+                <input type="text" id="city" name="city" placeholder="" required class="input_box_user">
+                <label for="city" class="input_label"><b>Cidade</b></label>
+            </div><br>
+
+            <div class="input_box">
+                <input type="text" name="address" placeholder="" required class="input_box_user">
+                <label for="address" class="input_label" ><b>Endereco</b></label>
+            </div><br>
+
+            <div class="input_box">
+                <input type="text" id="state" name="state" placeholder="" required class="input_box_user">
+                <label for="address"class="input_label" ><b>Estado</b></label>
+            </div><br>
+
+            <p class="text_checkbox"><b>Quais linguagens de programação tem aplicado em seus projetos atualmente?</b></p><br>
+            
+            <div class="checkbox">
+
+                <div class="box_icons">
+                    <input type="checkbox" name="javascript" id="javascript">
+                    <label for="checkbox"><b>Java Script</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/arcade/100/javascript.png" alt="javascript"/>
+                </div>
+
+
+                <div class="boxi_cons">
+                    <input type="checkbox" name="php" id="php">
+                    <label for="checkbox"><b>PHP</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/color/48/php.png" alt="php"/>
+                </div>
+
+                <div class="box_icons">
+                    <input type="checkbox" name="phyton" id="phyton">
+                    <label for="checkbox"><b>Phyton</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/arcade/100/python.png" alt="python"/>
+                </div>
+
+                <div class="box_icons">
+                    <input type="checkbox" name="java" id="csharp">
+                    <label for="checkbox"><b>C#</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/nolan/64/c-plus-plus-logo.png" alt="java-coffee-cup-logo"/>
+                </div>
+                
+                <div class="box_icons">
+                    <input type="checkbox" name="java" id="c++">
+                    <label for="checkbox"><b>C++</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
+                </div>
+
+                <div class="box_icons">
+                    <input type="checkbox" name="java" id="java">
+                    <label for="checkbox"><b>Java</b></label>
+                    <img align="center" width="25" height="25" src="https://img.icons8.com/3d-fluency/94/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/>
+                </div><br><br>
+
+            </div>
+    
+        <div class="btn_check">
+
+            <button type="submit">Enviar</button>
+
+        </div>
+
+        </fieldset>
+
+
+    </form>
+
+
+</body>
+</html>
