@@ -6,7 +6,6 @@
     rgba(0, 252, 241, 0.9780287114845938) 10%,
     rgba(152, 255, 150, 1) 61%
   );
-  font-size: 62.5%;
 }
 html,
 body {
@@ -14,7 +13,7 @@ body {
   color: var(--color-text);
   outline: none;
   font-family: "Montserrat", serif;
-  font-size: 16px;
+  font-size: 62.5%;
 }
 header {
   font-size: 2rem;
@@ -25,7 +24,7 @@ header {
 }
 h1 {
   text-transform: uppercase;
-  padding: 3rem;
+  padding: 2rem;
   outline: none;
   background-image: var(--effect-main-text);
   background-clip: text;
@@ -44,6 +43,7 @@ legend {
   outline: none;
 }
 fieldset {
+  border-color: var(--color-text);
   border-radius: 1rem;
   animation: fade 5s linear infinite;
 }
@@ -80,16 +80,13 @@ form .input_label {
   transition: 0.5s;
 }
 .input_box_user:focus + .input_label,
-.input_box_user:valid + .input_label{
+.input_box_user:valid + .input_label {
   top: -2rem;
   font-size: 1.2rem;
   color: var(--color-text);
 }
 form span {
   display: block;
-}
-fieldset {
-  border-color: var(--color-text);
 }
 .input_box input::placeholder {
   background: transparent;
@@ -103,17 +100,19 @@ input:focus {
   margin-left: 2rem;
 }
 .checkbox {
-  column-count: 4;
   margin-left: 2rem;
   gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .btn_check {
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin-top: -5rem;
 }
 .btn_check button {
-  width: 25rem;
+  width: 50rem;
   height: 4rem;
   border: transparent;
   border-radius: 0.5rem;
@@ -125,7 +124,6 @@ input:focus {
   transition: 0.2s;
   animation: pulse 3s linear infinite;
   cursor: pointer;
-
 }
 .birth {
   margin-left: 2rem;
@@ -139,4 +137,69 @@ input:focus {
   outline: none;
   cursor: pointer;
   color: #ffff;
+}
+
+@media screen and (max-width: 602px) {
+  form {
+    font-size: 1.5rem;
+    padding: 0px 4rem;
+  }
+  fieldset {
+    animation: fade 5s linear infinite;
+    margin-top: 2rem;
+  }
+  .btn_check button {
+    width: 45rem;
+    height: 4rem;
+    border: transparent;
+    border-radius: 0.5rem;
+    background: var(--color-text);
+    margin-block: 4rem;
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.2s;
+    animation: pulse 3s linear infinite;
+}
+}
+
+@media screen and (max-width: 564px) {
+
+  body{
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+  h1 {
+    text-transform: uppercase;
+    padding: 1.5rem;
+  }
+  form {
+    font-size: 1.2rem;
+    padding: 0 8rem;
+    padding-top: 3rem;
+  }
+  fieldset {
+    height: 75rem;
+    
+  }
+  .text_checkbox {
+    margin: 0 auto;
+    width: 40rem;
+    padding-top: 2rem;
+  }
+  .checkbox {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem;
+  }
+  .btn_check button {
+    width: 36rem;
+    margin-block: 8rem;
+    color: #ffff;
+    font-size: 2rem;
+    transition: 0.2s;
+    animation: pulse 3s linear infinite;
+    cursor: pointer;
+  }
 }
